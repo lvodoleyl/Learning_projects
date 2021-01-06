@@ -1,0 +1,22 @@
+function F(,digit)
+begin
+do count:=0
+while digit > 0
+begin
+do count:=(2*count) + digit
+do digit:= digit div 2
+end
+return(count)
+end
+
+main
+do n:=read()
+for i:=0 to n step 1
+begin
+print(,F(,i))
+end
+
+if F(,3) = 1
+begin
+print(,2)
+end
